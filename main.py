@@ -31,16 +31,5 @@ def run():
     generate_table(pairs)
 
 
-run()
-
-
-
-
-
-def print_raw():
-    response = requests.get('https://api.coincap.io/v2/assets')
-    data = response.json() if response and response.status_code == 200 else None
-    
-    print(data)
-    
-#print_raw()
+if __name__ == '__main__':
+    run()
